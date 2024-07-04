@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.6 on win32)" generated="2024-07-04T14:35:37.039465" rpa="false" schemaversion="5">
+<suite id="s1" name="Latihan" source="D:\10. magang\sirclo\latihan_git_intern\test\latihan.robot">
+<test id="s1-t1" name="TCL3 Login Unregistered Email" line="12">
+<kw name="Start Test" owner="base" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:35:37.303943" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-07-04T14:35:37.303943" elapsed="2.100643"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:35:39.404586" level="INFO">Opening url 'https://pwa.getswift.asia/'</msg>
+<arg>${URLWEB}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-04T14:35:39.404586" elapsed="1.178362"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-04T14:35:40.582948" elapsed="0.044151"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:35:40.628645" level="INFO">Executing JavaScript:
+document.body.style.zoom = "100%"
+Without any arguments.</msg>
+<arg>document.body.style.zoom = "100%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-07-04T14:35:40.627620" elapsed="0.011887"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-04T14:35:40.640508" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-04T14:35:37.302945" elapsed="3.337563"/>
+</kw>
+<kw name="To Login Page" owner="login_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=${HeaderLinkToLoginOrRegister}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-04T14:35:40.641505" elapsed="2.043067"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:35:42.684572" level="INFO">Clicking element 'xpath=/html/body/div/div/header/div[3]/div/div/div/div[2]/div/div[3]/div[2]/div/a'.</msg>
+<arg>xpath=${HeaderLinkToLoginOrRegister}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:35:42.684572" elapsed="2.065993"/>
+</kw>
+<status status="PASS" start="2024-07-04T14:35:40.641505" elapsed="4.109060"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:35:44.751337" level="INFO">Typing text 'rangga.putra@mail.sirclo.com' into text field 'xpath=//div[@id='login-email-textfield']/input'.</msg>
+<arg>xpath=${InputEmailLogin}</arg>
+<arg>${tcl3_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:35:44.751337" elapsed="3.642432"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:35:48.394770" level="INFO">Typing text 'ranggapass123' into text field 'xpath=//div[@id='login-password-passfield']/div/div/input'.</msg>
+<arg>xpath=${InputPassLogin}</arg>
+<arg>${tcl3_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:35:48.394770" elapsed="3.312861"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:35:51.708631" level="INFO">Clicking element 'xpath=//button[@id='swiftLoginButton']'.</msg>
+<arg>xpath=${SignInButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:35:51.707631" elapsed="2.086307"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=${MessageError}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-04T14:35:53.794449" elapsed="2.035604"/>
+</kw>
+<status status="PASS" start="2024-07-04T14:35:37.301949" elapsed="18.529130"/>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" start="2024-07-04T14:35:37.040452" elapsed="18.791598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Latihan">Latihan</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
