@@ -1,2 +1,5 @@
 HeaderLinkToLogin                      = "//a[contains(@class,'swift-login-register-link')]"
-TextBoxUserName                        = "//input[@name='username']"
+TextBoxEmail                           = "//input[@placeholder='e.g: user@gmail.com']"
+TextBoxPassword                        = "//input[@placeholder='********']"
+SignInButton                           = "//button[@id='swiftLoginButton']" 
+ErrorMessageInccorectEmail             = "//li[@data-msg-field='login[username]']"
