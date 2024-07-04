@@ -1,2 +1,2 @@
 #URL List
-URLWEB                  = 'https://pwa.get.swift.asia/'
+URLWEB                  = 'https://pwa.getswift.asia/'
