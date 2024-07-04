@@ -8,6 +8,11 @@ Variables   ../resources/locators/base_locator.py
 Test Setup          Start Test
 
 *** Test Cases ***
-Testcase Open home page
+
+TCL1.Login incorect value
     [Tags]    Test  
-    To Login Page
+    Go to the Login Page
+    Input email in the wrong format   ${IncorrectEmail}
+    Input password    ${Password}
+    Click the Sign In button
+    Verify the sign in button is disabled 
