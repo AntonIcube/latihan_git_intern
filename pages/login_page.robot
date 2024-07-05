@@ -15,7 +15,7 @@ To Login Page
     Click element    ${ButtonSignIn}
     Wait Until Element Is Visible    ${FromLogin}
 
-Input Login Form
+Input Login Form 
     [Arguments]    ${Email}    ${Password}
     Wait Until Element Is Enabled    ${LoginUsername}
     Input text    ${LoginUsername}    ${Email}
