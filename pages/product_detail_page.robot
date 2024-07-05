@@ -11,4 +11,11 @@ Variables       ../resources/locators/my_account_locator.py
 Variables       ../resources/locators/product_list_locator.py
 
 
-# *** Keywords ***
+*** Keywords ***
+Wait for PDP Visible
+    Wait Until Element Is Visible    ${PDPProductName}
+Check Product Name
+    [Arguments]        ${ProductName}
+    Element Should Contain    ${PDPProductName}    ${ProductName}
+Click Compare Product Button
+    Click Button        ${CompareProductButton}
