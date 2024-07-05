@@ -13,6 +13,13 @@ Test Teardown       End Test Case
 
 
 *** Test Cases ***
+TCPDP8.Logged in user is able to add product to wish list and access the wishlist page
+    Login User
+    Go To Home Page
+    Add Product to Wish List    ${ProductConfigNameForSearch}
+    Wait for Wish List Page
+    Validate Message Success Alert Is Visible
+
 G-TCPDP9.Guest can add product and access comparison page
     Go To Home Page
     Add Product Compare List                            ${ProductConfigNameForSearch}
