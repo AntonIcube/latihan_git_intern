@@ -13,6 +13,12 @@ Test Teardown       End Test Case
 
 
 *** Test Cases ***
+G-TCPDP9.Guest can add product and access comparison page
+    Go To Home Page
+    Add Product Compare List                            ${ProductConfigNameForSearch}
+    Open Compare Page
+    Verify First Product Name In Compare List           ${ProductConfigNameForSearch}
+
 L-TCPDP10.Logged in user can add product and access comparison page
     Login User
     Go To Home Page
