@@ -8,6 +8,8 @@ MenuWoman           = "//a[@title='Women']/span[@class='inline items-center']"
 ToggleCurrency      = "//div[@x-data='initCurrency()']//button"
 CurrencyItem        = "//div[@x-data='initCurrency()']//div[@role='menu']//a[1]"
 BannerCarousel      = "//a[@class='mgz-carousel-custom_link']"
+CompareLink         = "//a[@id='compare-link']"
+
 #Search
 SearchBox           = "//input[@id='search']"
 SuggestedProduct    = "//a[@class='w-full block p-2']//span[@x-text='searchResult.title']"
