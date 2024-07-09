@@ -27,3 +27,6 @@ Wait Until Element Is Not Visible With Long Time
 Alert Warning Validation Register
     [Arguments]    ${AlertMessage}
     Wait Until Element Is Visible    ${AlertMessage}
+
+Press Enter Keyboard
+    Press Keys        ${None}        ENTER
