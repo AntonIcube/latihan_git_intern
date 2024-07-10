@@ -23,11 +23,20 @@ productItemPrice    =   "//section[@id='product-list']//form[{}]//div[contains(@
 
 # Product Card Detail
 ProductItemBasedForm        = "//div[@class='products wrapper mode-grid products-grid']//form"
-ProductItemCardName         = "//form[contains(@class,'product-item')][{}]//a[@class='product-item-link']"
-ProductItemAddToCartButton  = "xpath=(//button[contains(@class,'btn-primary') and contains(@aria-label,'Add to Cart')])"
-SummarySwatchOption         = "//form[{}]//div[@class='swatch-wrapper']/div"
+ProductItemCardName         = "//form[contains(@class,'product-item')]//a[@class='product-item-link' and contains(text(), '{}')]"
+ProductItemAddToCartButton  = "//button[contains(@class,'btn-primary') and contains(@title,'Add to Cart')]"
+SummarySwatchOption         = "//form[{ }]//div[@class='swatch-wrapper']/div"
 ProductOption               = "//form[{}]//div[@class='swatch-wrapper']/div[{}]//div[contains(@x-id,'attribute-option')]"
-AddToCartButtonInPLP        = "xpath=(//button[contains(@class,'btn-primary') and contains(@aria-label,'Add to Cart')])[{}]"
+AddToCartButtonInPLP        = "//button[contains(@class,'btn-primary') and contains(@aria-label, 'Add to Cart {}')]"
+AddReviewButton = "//button[contains(@class,'rounded-md') and contains(@class,'border-neutral-600')]//span[contains(text(),'Write a review')]"
+
+# Reviews
+NameReviewer                = "//input[@id='nickname_field']"
+RatingReviewer              = "//input[@id='Rating_{}']"
+ReviewReviewer              = "//input[@id='summary_field']"
+BodyReviewer                = "//textarea[@id='review_field']"
+ButtonSubmitReview          = "//form[@id='review_form']/div[2]/button[2]/span"
+SuccessSubmitReview         = "//p[contains(@class, 'text-green')]"
 
 #Allert
 SuccessAddToCartAllert = "//div[@ui-id='message-success']"

@@ -56,3 +56,6 @@ ReviewAlertSuccess          = "//p[@x-show='displaySuccessMessage']"
 whatsappShareBtn    = "//div[contains(@class,'social-share')]//a[contains(@title,'Share on Whatsapp')]/ancestor::div[contains(@class,'social-share-button')]"
 FacebookShareBtn    = "//div[contains(@class,'social-share')]//a[contains(@title,'Share on Facebook')]/ancestor::div[contains(@class,'social-share-button')]"
 TwitterShareBtn     = "//div[contains(@class,'social-share')]//a[contains(@title,'Share on Twitter')]/ancestor::div[contains(@class,'social-share-button')]"
+
+sizeConfig          = "//label[div[contains(text(), {})]]"
+colourConfig        = "//label[contains(@style, 'background-color:{}')]"
