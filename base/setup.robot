@@ -73,4 +73,4 @@ Setup Browser Option Configuration
     Call Method    ${options}    add_argument     --disable-application-cache
     ${options.prefs}    Create Dictionary    profile.default_content_setting_values.geolocation     1
     Call Method    ${options}    add_experimental_option    prefs       ${options.prefs}
-    Create WebDriver    ${BROWSER}    ${BrowserConfiguration}=${options}   executable_path=${ExecutablePath}
+    Create WebDriver    ${BROWSER}    

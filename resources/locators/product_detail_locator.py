@@ -5,6 +5,7 @@ ProductReviewButton                     = "//div[@class='review-modal-wrapper']/
 QTYInput                                = "//div[contains(@class,'product-info-main')]//input[contains(@name,'qty')]" 
 PDPProductName                          = "//div[contains(@class,'product-info-main')]//div[contains(@class,'container')]//h1[contains(@class,'page-title')]//span[contains(@data-ui-id,'page-title-wrapper')]"
 ProductNameOnPDP                        = "//h1[contains(@class,'page-title')]//span"
+CompareProductButton                    = "//button[@id='add-to-compare']"
 
 # Manage Configurable Product
 ProductConfigurable                     = "//body[contains(@class,'page-product-configurable')]"
@@ -56,3 +57,6 @@ ReviewAlertSuccess          = "//p[@x-show='displaySuccessMessage']"
 whatsappShareBtn    = "//div[contains(@class,'social-share')]//a[contains(@title,'Share on Whatsapp')]/ancestor::div[contains(@class,'social-share-button')]"
 FacebookShareBtn    = "//div[contains(@class,'social-share')]//a[contains(@title,'Share on Facebook')]/ancestor::div[contains(@class,'social-share-button')]"
 TwitterShareBtn     = "//div[contains(@class,'social-share')]//a[contains(@title,'Share on Twitter')]/ancestor::div[contains(@class,'social-share-button')]"
+
+sizeConfig          = "//label[div[contains(text(), {})]]"
+colourConfig        = "//label[contains(@style, 'background-color:{}')]"
