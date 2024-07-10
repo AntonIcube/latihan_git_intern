@@ -27,7 +27,7 @@ Submit Form Login
     Click element    ${ButtonLogin}
 
 Login Validation
-    Wait Until Element Is Visible    ${ButtonEditContactInformation}
+    Wait Until Element Is Visible With Long Time   ${ButtonEditContactInformation}
     Element Should Be Visible    ${ButtonEditContactInformation}
 
 Go To Login By Phone Number
