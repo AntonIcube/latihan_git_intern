@@ -15,3 +15,4 @@ SuggestedProduct    = "//a[@class='w-full block p-2']//span[@x-text='searchResul
 
 #Content
 ProductPriceInHomePage  = "//form[contains(@class,'item product product-item')]//span[@class='price']"
+ProductItemLink         = '//*[@id="product-image-2148"]'

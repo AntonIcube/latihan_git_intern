@@ -8,6 +8,11 @@ Variables       ../resources/locators/home_locator.py
 
 
 *** Keywords ***
+Search Product
+    [Arguments]   ${value}
+    Input Text    xpath=${SearchBox}    ${value}
+    Press Key    xpath=${SearchBox}    \ue007
+
 Input Search Box
     [Arguments]         ${Text}
     Input Text          ${SearchBox}        ${Text}
@@ -25,3 +30,4 @@ Add Product Compare List
 
 Open Compare Page
     Click Link    ${CompareLink}
+

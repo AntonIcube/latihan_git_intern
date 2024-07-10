@@ -10,8 +10,15 @@ Test Setup          Start Test Case
 Test Teardown       End Test Case
 
 *** Test Cases ***
+G.TCL1.Succesful Login with Registered Email and Password
+    To Login Page
+    Input Login Form  ${Email}         ${Password} 
+    Submit Form Login
+    Login Validation
+    
+
 G-TCL2.Validation of Failure Login with Incorrect Email and Password Format
     To Login Page
-    Input Login Form    ${FirstName}    ${Password}
+    Input Login Form    ${IncorrectEmail}    ${Password}
     Submit Form Login
     Alert Visible Validation    ${AlertInvalidEmailFormat}

@@ -39,14 +39,15 @@ AddToWishListButton         = "//button[@id='add-to-wishlist']"
 ProductQuantity             = "//input[@name='qty']"
 ProductQuantityValidation   = "input[Name='qty']"
 
-#Product Review
-ReviewRatingButton          = "//form[@id='review_form']//input[contains(@id,'Rating_{}')]"
-ReviewRatingInputValidation = "input[name='ratings[4]']"
+#Product Review 
+ReviewRatingButton          = '//*[@id="customer-review-list"]/div[1]/div[2]/button'
+ReviewRatingInputValidation = '//*[@id="review_form"]/div[1]'
 ReviewNameInput             = "//form[@id='review_form']//input[@id='nickname_field']"
 ReviewNameInputValidation   = "input[id='nickname_field']"
+ReviewRating                = '//*[@id="Rating_2"]'
 ReviewTitleInput            = "//form[@id='review_form']//input[@id='summary_field']"
 ReviewTitleInputValidation  = "input[name='title']"
-ReviewDetailInput           = "//form[@id='review_form']//textarea[@id='review_field']"
+ReviewBodyInput           = "//form[@id='review_form']//textarea[@id='review_field']"
 ReviewDetailInputValidation = "textarea[name='detail']"
 ReviewSubmitButton          = "//form[@id='review_form']//button[2]"
 ReviewCancelSubmitButton    = "//form[@id='review_form']//div[2]//button[1]"

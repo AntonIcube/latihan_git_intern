@@ -4,8 +4,8 @@ Library     String
 Variables   ../resources/data/testdata.py
 
 *** Variables ***
-${BROWSER}    Chrome
-${CromeDriverPath}    ${CURDIR}/../../Drivers/chromedriver-win64/chromedriver
+${BROWSER}             Chrome
+${CromeDriverPath}    ${CURDIR}/../chromedriver 
 ${EdgeDriverPath}     ${CURDIR}/../../Drivers/edgedriver_win64/msedgedriver
 
 *** Keywords ***

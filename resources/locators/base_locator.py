@@ -15,6 +15,6 @@ AlertMessage                            = "//li[@ha='req-error']"
 AlertProductNotFound                    = "//div[@class='message notice']"       
 HeaderShoppingCartButton                = "//button[@id='menu-cart-icon']"  
 HeaderCompareButton                     = "//a[@id='compare-link']"
-
+AlertSuccessAddProductToCart            = '//*[@id="messages"]/div/div/div/div[2]'
 #Loader
 LoadingPage                            = "//div[contains(@x-show, 'isLoading')]"

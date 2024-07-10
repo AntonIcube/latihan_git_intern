@@ -15,7 +15,7 @@ To Login Page
     Click element    ${ButtonSignIn}
     Wait Until Element Is Visible    ${FromLogin}
 
-Input Login Form
+Input Login Form 
     [Arguments]    ${Email}    ${Password}
     Wait Until Element Is Enabled    ${LoginUsername}
     Input text    ${LoginUsername}    ${Email}
@@ -27,7 +27,7 @@ Submit Form Login
     Click element    ${ButtonLogin}
 
 Login Validation
-    Wait Until Element Is Visible    ${ButtonEditContactInformation}
+    Wait Until Element Is Visible With Long Time   ${ButtonEditContactInformation}
     Element Should Be Visible    ${ButtonEditContactInformation}
 
 Go To Login By Phone Number

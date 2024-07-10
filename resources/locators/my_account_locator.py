@@ -1,4 +1,5 @@
 ButtonEditContactInformation    = "//a[@aria-label='Edit contact information']"
+IconToHomapage                  = "//img[@alt='Store logo']" 
 
 #MyAccountMenu
 MyWishlistMenu                  = "//div[@id='account-nav']//a[contains(@href,'wishlist')]"
