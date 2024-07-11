@@ -9,26 +9,23 @@ Resource        ../base/common.robot
 
 *** Keywords ***
 To Login Page
-    Wait Until Element Is Visible With Long Time    ${HeaderLinkToLogin}
-    Click Element    ${HeaderLinkToLogin}
-    Wait Until Element Is Visible With Long Time    ${ButtonSignIn}
-    Click element    ${ButtonSignIn}
-    Wait Until Element Is Visible    ${FromLogin}
+    Wait Until Element Is Visible With Long Time    ${HeaderLinkLoginShopify}
+    Click Element    ${HeaderLinkLoginShopify}
 
 Input Login Form 
     [Arguments]    ${Email}    ${Password}
-    Wait Until Element Is Enabled    ${LoginUsername}
-    Input text    ${LoginUsername}    ${Email}
-    Wait Until Element Is Enabled    ${LoginPassword}
-    Input text    ${LoginPassword}    ${Password}
+    Wait Until Element Is Enabled    ${LoginUsernameShopify}
+    Input text    ${LoginUsernameShopify}    ${Email}
+    Wait Until Element Is Enabled    ${LoginPasswordShopify}
+    Input text    ${LoginPasswordShopify}    ${Password}
 
 Submit Form Login
-    Wait Until Element Is Enabled    ${ButtonLogin}
-    Click element    ${ButtonLogin}
+    Wait Until Element Is Enabled    ${ButtonLoginShopify}
+    Click element    ${ButtonLoginShopify}
 
 Login Validation
-    Wait Until Element Is Visible    ${ButtonEditContactInformation}
-    Element Should Be Visible    ${ButtonEditContactInformation}
+    Wait Until Element Is Visible    ${ButtonContactDetailShopify}
+    Element Should Be Visible    ${ButtonContactDetailShopify}
 
 Go To Login By Phone Number
     Wait Until Element Is Visible With Long Time    ${ButtonSwitchLoginByPhoneNumber}

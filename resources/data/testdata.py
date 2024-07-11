@@ -1,13 +1,7 @@
 #URL List
-URLWEB                  = 'https://swift-hyva.testingnow.me/'
-URLAccount              = 'https://swift-hyva.testingnow.me/customer/account'
+URLWEB                  = 'https://icubesirclo.myshopify.com/'
+URLAccount              = 'https://icubesirclo.myshopify.com/account'
 ChromeDriverPath        = 'C:\\Users\\HP\\Documents\\Downloads\\edgedriver_win64'
 Password                = 'Iss20025.'
-Email                   = 'irmatampubolon1801@gmail.com'
-IncorrectEmail          = 'irma.com'
-EmailAddressRegistered  = 'irmatampubolon1801@gmail.com'
+Email                   = 'irma.naomi@mail.sirclo.com'
 
-#RatingInPDP
-ReviewName       = 'Irma Naomi'
-ReviewTitle      = 'Review Test Title'
-ReviewBody       = 'Review Test Body'
